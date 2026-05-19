@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reis Lab at Howard University | Cristiano Reis</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; color: #222; background: #fdfdfd; line-height: 1.7; }
+    a { color: #003865; }
+    header { background: #003A70; color: #fff; padding: 0; text-align: center; }
+    .header-stripe { background: #002244; padding: 0.3rem 1rem; font-family: Arial, sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: #fff; font-weight: 700; }
+    .header-main { padding: 1.6rem 2rem 1.5rem; }
+    header .lab { font-size: 1.3rem; font-weight: bold; font-family: Arial, sans-serif; letter-spacing: 0.02em; color: #fff; margin-bottom: 0.3rem; }
+    header h1 { font-size: 1rem; font-weight: normal; color: #c8d8ea; margin-bottom: 0.2rem; }
+    header p { font-size: 0.85rem; color: #a0bcda; }
+    .header-rule { height: 4px; background: #002244; }
+    nav { background: #002855; text-align: center; padding: 0.6rem; }
+    nav a { color: #c8d8ea; text-decoration: none; margin: 0 0.9rem; font-family: Arial, sans-serif; font-size: 0.82rem; letter-spacing: 0.05em; text-transform: uppercase; }
+    nav a:hover { color: #fff; }
+    main { max-width: 860px; margin: 2.5rem auto; padding: 0 1.5rem; }
+    .hero { display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2rem; }
+    .hero img { width: 175px; height: 175px; border-radius: 50%; object-fit: cover; border: 4px solid #003865; flex-shrink: 0; box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+    .hero-text .name { font-size: 1.35rem; color: #003865; font-family: Georgia, serif; font-weight: bold; margin-bottom: 0.2rem; }
+    .hero-text .role { font-family: Arial, sans-serif; font-size: 0.9rem; color: #555; margin-bottom: 0.8rem; }
+    .hero-text p { font-size: 0.97rem; margin-bottom: 0.6rem; }
+    .links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.9rem; }
+    .links a { font-family: Arial, sans-serif; font-size: 0.8rem; background: #003865; color: #fff; padding: 5px 12px; border-radius: 20px; text-decoration: none; }
+    .links a:hover { background: #002244; }
+    .stats { display: flex; gap: 2rem; flex-wrap: wrap; margin: 1.5rem 0 0.4rem; font-family: Arial, sans-serif; }
+    .stat { text-align: center; }
+    .stat strong { display: block; font-size: 1.5rem; color: #003865; }
+    .stat span { font-size: 0.78rem; color: #666; }
+    .verify { font-size: 0.78rem; color: #888; font-family: Arial, sans-serif; margin-bottom: 2rem; }
+    section { margin-bottom: 2.5rem; }
+    h2 { font-size: 1.05rem; font-family: Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.08em; color: #003865; border-bottom: 2px solid #e8e8e8; padding-bottom: 0.3rem; margin-bottom: 1rem; }
+    p { margin-bottom: 0.8rem; }
+    ul { padding-left: 1.4rem; }
+    ul li { margin-bottom: 0.5rem; }
+    .pub-year { font-family: Arial, sans-serif; font-size: 1rem; font-weight: bold; color: #003865; margin: 1.4rem 0 0.5rem; border-left: 3px solid #003865; padding-left: 0.6rem; }
+    .pub-list { list-style: none; padding: 0; }
+    .pub-list li { padding: 0.65rem 0; border-bottom: 1px solid #eee; font-size: 0.92rem; }
+    .pub-list li:last-child { border-bottom: none; }
+    .pub-title { font-weight: bold; }
+    .pub-title a { color: #003865; text-decoration: none; }
+    .pub-title a:hover { text-decoration: underline; }
+    .book-badge { font-family: Arial, sans-serif; font-size: 0.72rem; background: #eef4ff; color: #003865; border: 1px solid #c8d8ea; border-radius: 4px; padding: 1px 6px; margin-left: 6px; font-weight: normal; vertical-align: middle; }
+    .pub-meta { color: #555; font-family: Arial, sans-serif; font-size: 0.82rem; margin-top: 0.1rem; }
+    .pub-cite { color: #999; font-family: Arial, sans-serif; font-size: 0.76rem; }
+    footer { text-align: center; font-size: 0.8rem; color: #999; font-family: Arial, sans-serif; padding: 2rem; border-top: 1px solid #e8e8e8; margin-top: 1rem; }
+    @media (max-width: 600px) {
+      .hero { flex-direction: column; align-items: center; text-align: center; }
+      .links { justify-content: center; }
+      .stats { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-stripe">Howard University &nbsp;&mdash;&nbsp; College of Engineering and Architecture</div>
+  <div class="header-main">
+    <div class="lab">Reis Lab at Howard University</div>
+    <h1>Bioindustrial Manufacturing &amp; Biorefinery Laboratory</h1>
+    <p>Department of Chemical Engineering</p>
+  </div>
+</header>
+<div class="header-rule"></div>
+<nav>
+  <a href="#about">About</a>
+  <a href="#news">News</a>
+  <a href="#research">Research</a>
+  <a href="#teaching">Teaching</a>
+  <a href="#publications">Publications</a>
+  <a href="#people">People</a>
+  <a href="#opportunities">Opportunities</a>
+  <a href="#contact">Contact</a>
+</nav>
+<main>
+  <section id="about">
+    <h2>About</h2>
+    <div class="hero">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAEsASwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDsI1qwi0kaVMq1ynSPjFTJTEWp0SgokjFTqKjjXFTqKAE20u2nYpQKCRoUU4KKdilApoQKtSKlCipkFMVxFSpFSnotSKtADFSnqtPC04LQMaBTsU4ClApoQgWnqtKoqRRTFcQLTttOUU7FCFcj20bakAoIpgQMtRstWGFMK00BWZaaVqwUpClDAr7aQrU5Wk20gK7LUbLVplqNlpgVGSo2SrbLUZWqRJW8ul2VY201hUSNIldkqBk5q2w4qFhzSigkzBSP2qQJ7VOE4pypWZYyKOrMcdLElWo0oBESx08J7VYVKXZQDK+2nBal20u2gkiC04LTwtOC1SExqrUqChVqRVp2EPQVMq0xFqdBQAgWlxTwtLtpAR4oAqTbQFqhCKKlUU1RUqimAoFLinKKcBQAwLSlakAoIpgV2Wk21MVpNtMRCVppWpyKaVpMCArSFanK00ikMgZahdassKjYVQisy0wip2FRkUxEZHFRuKnxTHWoZaKzioCOatOtRFeaqKJbMwCnqtAFSxisDYfGlWUXimRLVlV4oAaBS4p+KULTEyPbRtqYLS7KBEASpFSpAlSKtMRGEqRUqRVqRVpiGIlSqtPVakC0wIttV9QvbPT7Zrm9uI4Il6u5wBVi6kEMZPVuwrivEnh4+IJB/aVy7wg/6lDhfx9a5q2JhS33Omhhp1dtjG134x6Jbym30ayudVmD7T5a4UD1zWNP47+ImoQs+n6DDaJ/ek5I/wA8V23h7wNpNqyJaWkceO+2u703wxaxytDJGTHgfMMc1yLFVKj91HW8LSpr32eBXnjT4oQxq4tLJS2MDb6DniqI+LnxCssfatEtZQxOPlIr6W1LwXp81uvlKBtBwCK5fWfBNpG6zSQRsFJxx6iqlWrU/iRMKVCppFnlulfHgrKq6z4bubeMkBpIjuA45OK7zw38UfButuIoNTEExbaI5xsJP41BceE9JkTyntYyB1BUVmX3w78N3SMGsIwxHDJwRSjj+5csu7M9OglimjEkMiyKejKcinkV4t/wh/iXw8TN4T8Q3KBeltcNuQ1b0z4ralos8dh430eS3bobyAEx/iK7KWKhM4quEqQPXSKTFU9F1fTdZs0vNNu4rmFxkMjZrQxXSnc5WrERWmkVMRSEUAiEimEVOVprLRYCuwqJhVlhUTLTEV2FMK1Oy0wrTAixTGWpyKaRUlFZlqPZVkrTStWiGYgWpY15oRanjSuY3JIVqcDikiWpQKYDQtPVaVRUqLTJuMCU4JUgWlC0ARhaeq08LTgtNCYwLT1FOxTlFMQ5BUd5cx2yc8segp8siwxF27VgXUrTSM7HnqM1xYvE+yVlud+CwvtneWyHTXLyvuY4yelQu7AZ7Zqt5p8zHGM9aWSQLyTzjpivBlNyd2fQKCirJGzpN+kbqJCBkjrXT2+pxug8v5sc5HavNp7hT8uTj27VfsdVmhQbJGG0cZ71tSruGhz1sMp6ney6uYkJdjz6nIrm9U1aSd8sdy5ypPOKw59QkmBLn24PFQmfcQu48c89KueIlPQVLCRhqaLzh+AFDd6RJOcDmqMbZYdvSrtqpdh0wR1PrWaVzoaSRKTntVTVNLstTtHgvbdJUYY+YVdsdlyH8pwRHIY3GMFWHUVMIxnG7Ga0SaMZNbM8N8WeG9e8A3La34NvJYYM7pbUnKN+Feg/CT4uaV4thFjqDJZaqnDxMcBj6iup1OxS5tXgmQMjgg5r5Z+L3g660DxCb/Sy0J3b1KNg16OFru/KzzMXh1bmR9mjBGQcimkV47+zt8Tn8UWB0XWXRNStlAUk4Mq+v1r2UivTTujypKzIzTSKkIppFMkhYUwrUxFN20wIGWmFKslaQrQCKrLUbLVtkqJlpDKxFJtqYrRtqyTFRasRrTI1qwi1ymw5Fp4FCipFFNAIq1MgpFWpFFMQBacFpyinhaBEYWnBaeFpQtMQwLT1WlC1HeSiGBm79qUpKKbY4xcmkjP1KYPL5QI2r+tULyNEQEuOtRzSsWLDBOe/SoLl5HzliQRivna0/aScmfS0Kfs4qKK0hBJYHA7CoLiRwM5x7VJJ8o4HFVJ2G7JJ59qw5TqTHBiRjIFR+ZycEZqI5HPPPvTQp2g4HPX60+UonSQNwv8AOpoiwbBy2ffNV7ePA9Cc5q1BnHtVqImy7CMEHH5Vp22BsxkDrms+BTsIwD9atxsVIPOK1SsYS1Na1KGNmKgE8njkmpURGy2MHORVGGRVAJznPX+lWftI243cYwfpWiZzuL6EkseTgYPevNPizo4u9uYt4CnnHH0r0uOdBGCB0GMHqa4vx1KZISwLbTw23rWtP4kzOfwtM+XblL/w14ji1fTw8cltKGYDjvytfY3w18U2vi/wra6rbnDMoEqHqrDqK+X/AB1p8gzIsbOsjHJz1x/Wtj9mHxNNovjWXQZ5GFpfDMaseA4r1abPHqxPqwimkVIelIRW5zkRFNxUpFJimIjxSFalxTSKBoiZaiZasMKYwoSBsrMtJtqYrTcU2IxY6nSqynFTRtXObE61KgqJKnSmA9VqRVpEqRaBCqtSAU0U8U0ITFKBRTgKYgArH1qbdL5anhetbLfKhPoM1zE5aR3cnqc5rix0+WnbuduBhzVL9hscQdskZqK+Cpnc3HTgUPciJTj86qXNyrDgg14zWh7sdyvK+VyDz16VRb535GOfWpXnDs4XoDgZqB5B5g7VCRuiRU+bk+31qZViwOMnH8R/SoVkGwdKDMmevanyu4rlhdoOChx6irMUYPINUreRSOtX4JU67hk9q0UGTKSJos8ryMmrKgquRgDNQIykdeT6Cp2cBMtwO57Va8zJkyEFSeeKUH5c49qWNcjjj+tOxwRk1qo3Rk3YjdmVCA3QVy3iKdmhfa4y3A9BW5fSPkKhPJ5zXNaiRLDIzKflkHAranExqSPPPGNjHcWxAZQQzZweTx0rzPT7l9B8caVfqpTy7lCTnjBOK9b8VWkaQMWXy/MG4kckE9c1414yjCXCSRsxEbDkfpXfT2PMrI+8dPlFxYwzqch0DA/hUxFYnw9m+0+C9KmyTutkOT9BW8RXWjhe5HikxUmKMUAR4ppFSkU0igZERTCKlYUwimhETCoz1qV6hPWmIwRUsdRJUq1zm1yxGamQ1XU1KhosFyyhqZarx1OlOwiUU4CmrT1oEKBTgKAKeBTAqarNHb6fLLI4RQvLE9K8v1vxzp1nIIs4ByFJOM1P8cNZu0mtdCtZWiEy75GGcnJ4HFeQax4Mv7mICe6dlxmMg9PrXn4lKc0pPRHpYS8YXitWdnf/ABDsFOTKNvTPY/TvToPGOn3bYgmWQlcHB6fWvHNY8FapCc+fuYHIOTg+1V9E0nW7O7D+QhAHLA5xWfsqdtGdCq1U9UfQ1hdpNZLLGR8xP50gkYON3I3D8K57wa0z6WsTDa47Zxitq4LBSPSuOcUmenTleI3UdSjt8hpF29smsK58WadazFJbsBhyACOn+NZHjG1uZrWUJu5+7gd683u9D1UysphbP99iT+VdFKlFq7OWtVnHSKPUW+ImlRT+U8xCnhW9/QitC38d6epXZMrkjmvF7TwfqLsJPJOS3y5H61uWHg/XogJopdg/u+1bOnT7nPGrWfQ9p0/xhZSXSwhiHYcZB+Ye3rXaaZdJcwKzAENg9eo9q+foNG1kpG5bbIhxvWPaPyFdj4d1vVbORLefBfHO1sqx9MdQaylSXQ2VR7SR7QUGxSBxio5Dgbe5OM1k6Jq6XeYnPluqhtnfB71qM+QRgH05qL8ug7GdqETHjkmuZ1HMaNHwp3dfxBrs3VWITd82MgVymvKDM8RG1wuQPWt4NGVRHJ6tL/o8nmAMjfcyPvDnivIfHMCSwmVFwSRwO9epa6GyI5mbJBwF6ema8/8AFtvJFbMm4kZxytdcHY4Kup9Z/DRNvgXSBjH+ip/IV0RFc98L0kTwFo6yvvYWqZOPaukIrsWx573I8UYp+KMUCGEUxhUpqNqAIiKaRUpFNIqgK7ioivNWXFQnrQJnPotSqlPRKmRK5zUiVKmRKeqVKqU7gIi1KooUVKooBgoqRRQBTgKYhVFPApAKcBQhM4H4sWkLvYXflq0qbl+YcEYrx7xH4vt7MyJJJFDHDhZJXPAJ/hCjljXt3xOjMtjCgJBBJGOua8S1b4aR6heDVf7QcXQfzBG+AqH2Hr7mvKxE4e2tI9nCRmqN4nD+J/F19Z2cF89jqq21yx8iV7Py0kx/dLHmsbTPiF5d4IZ4SWPQHCk/Q9D+legfEDStb17Q7LQ9T1Yi1snzGI8D1HTp3rgrbwDY2tynlTzzSKx5cDGfpjmm5Ye2hpCGLctdj2D4Warba5MUhUqSuSrDFdnJZK5Kq2Gzj1rmPg/4YOgW93cBpD5igIrfwk+npxXbW6bJAxUggkmuGTTnZHfBNRuZepaEpiDlVJAz9a8y1bVILPUJ43wqxZzla9qvG86IpyOMZFeQfEHw9A9wzNLJGzHcWUDBPbOa6JuMUZwUpPUwv+EuSMi4/wBFsbc/ce4Y7n9wo5xUi/EzRYnaOfULcnuRHIgx9dpqn4c02XTtSa5iENxKyMpE6b8qQRxn61k+LfAmqeIdXkvI2W0EqDKRw5xtAHBBHWtKfspbsxrfWIP3Uej6N4p0rUoBPC6tF3kiYSIPrjkfiBXQw2+m31qskZjkQjKsuHUn+n1ryjRPhbrkKW01lfm2uI08szKPL+UMSd397r39q6fw/wCH/FWj3QuP7Rs53/5aqoCpKc9xkDP+0MH1zVS9nH4GRGVSfxo7MmeykjmEzoFbADLnA9R3/nXd6e5nto5Q4cMucr0NcBJNPqsUUKW06jH73yNvXuASeldp4ajjtbZYszg4+7L1H41hKakzVQcTXKHGTgkdM1w3i268nUiCMkJnOfeu8fb5RPGB3rzrxNco1zJ8m/MiFxj+EVrS3Maz0MXVVgnJkdgAG+90wOtcrq6x3hgsQRvlmUZ7datX93OLi5jit2d5JRgnoF7ce9bHgDwleXniKXUNYtWWKIK0QY45+ldLkoq5zRpuq7H0ZoMC22j2kCbcJEq8fSrpFcL4a8RkeJxohh2x+XlWz1rvK7KFVVY3Rw4rDSw87S66jCKQ0/FJitjmIyKjapmFRsKEBHikIp5FIRTEQvUDDmrDioiOaBGTGtTqtMjFTCuc2QAU4UlKKYD1qVKiWpUpiJFp4pq04UAKKcKSlFCJOV8WsJr1YCpIC4riNd0uSMbY554+OAGyB+BrudbUHUHfqelcxrE4kY5yp6c9q+fxabqSZ9TgFalFHB3Oj3UkmZNQYqT0MQzmtXRdBhUh2TzWGPmYVoI0HmHzHHA6+ldBogtbt0WJwEB+ZuwFc65mdk7R2JbW3WztFUJ82c49ajkD5L4xz2qxdXCyS7UHBOAaSSJmi34I9MVrTS3IkrIjx5iYZsD+dY2u2sHkMDGHH+0OtagwG2tJjpzniqertFIMeYGwOfSrm1ykQXvHn+p6BBuZ7Gd4H67QAyflVextNbt3BSWF+eu5l/Tmt66VBKSq/eIzV21jAVWIyD2rBSbOzkRBp8mtuoEptlyO6l/8K6PS0u3H7yaGXaPmjMO3j8P51Jp8SOoyox05HSt2zsFCBl4PYjqK0jByManLBbFNrSFhueHbnn5eGx6gjuP5VcsY2jHlswfPMb/3h/Q1YW3UAqTgE9Afun1H+FPhjK5QgBc547H2raNOxxSncZe4S1csdoCnPavO9fsXk3/Osab+DgkkHuf89673VyGtHRucDk5rhNdY3VnLKz7fIQ7tnAGMDn1zWtPcxqK8Sh4D0NNa197yQn7DZ42KOjMMj8a9YhtE+zyOqbQo+WuR8ByfY/C11fG2aGIuREmMHao7/WtbwFrk2rW8qXDjkttXuB6Vcp+9YmnTahzIxfDnmS/E9XHIRMGvZQOK85+HOmf8VFqN6652ylVJr0jFdeXRfs3J9Wc2dVFKtGK6JDcUmKfig16B45EwqNhU5FMIoAhxSMKlIprCgRXYVGRzU7ioiOaBGQlSg1WVqlRs1gbIlFOApq09aYMcoqZRUa1ItAiQCnU0U+gQYpJMhCRTqZMwEbEnHFMRyF7dKt1M2Mhc45rznxZriwtK28dTit7xDqJgW4Yt/ERXz78QfErzXzWluxDEkA54A9a8Jp1HY+rpSjRjdnTw61fatqq2tn8wLYZugAr2qwggsdF8qCVQY4lLZblietfNnhzWpNKsWeIMs7qCHIyAe+fzrd8OfES4jDQatcebGW2rKg/nVPDvoS8Wm1d2Pc7K4jlYbgRluuegrdntnEHlspOVGGHTB9K8m0vxCJNvlSgiTBVgeD+Nat1rWoxwEnU7ezQKTuZ959vlB4/E0UqLaaZVWqtGmdoNId4yzKwHtzXNeK4BaxOrSlDj5GB71wsXxB1ewvmRdWivcn7qwtGf5kU3V/Eeo6wftFy0USpjYjHPzHu2K0dCysEK93e4R67JBe+Rd4znhuxrpdNv4ZgCCDj3rhtUltb1VzkkD5uOuB1B+tZuh6+LLURayzHbxgtxj2PvXL7Fo7ViI9T3rSpxIUJ+9jpmuntmLRgjIGK858M3gkdHDAqwGOe/1rvtNlVoxyDyc810U4o5sQ7GgA25iOVwMYpGJChtu3nBPbFJbSs0hH8J7HsaJXKOVYjZ/FnsMdqpo4WZmsKslkCfl3nBArhdeElrbLbW9vGI1ZnkO37x/rXS+KL+JoJ0SQKYwBtz1JPFYOpTvd2cQl3HzOJpNuAhGOM+tEEOTurHe+HbSIeEoYpzv3RbiSO5FcV4KK2/i67ityTFliPSuzv7a7k8P2ltauIyQgkPouOaDYwWRT7JbIsrjaXArKpdtJdNTfDtQjK/XQ6HwdbCDT2kx80jlifxrcFVdMiENjFH6LVmvbox5IJHzeIqe0qykOpD1ozSVsYgaaaU0hoAYaaaeaaRQSQuKjIqdxUZHNAHNKamjNQipI6wNSwpp6mohTgaYFhDUqVWQ1OhoETrT6jU08GmIU1HcY8l8kDg9akFMnTdGw5OaAPCvHjvJbXSWz7nVjnHcd6+a9Wkkk151Az83UjOK+jPFPnWHii8sioYy5YZbjGea8X8caMy6l9oSPy8MMEdh65ryKa5JtM92cvaUk0ZFjptzf3JCGVyq/xjJAPt0rTbwrdxQyNLvRMdAhz7deBU1smr2Ompq+jKbkRjc8cgOGArpfBnxUsdc1C10DVNLmXUJ2CQqi71ZuwHcHjoa1cpbxJhSi0ud2OGt7rVNNufs9tlY2OAA3AHqfU1Z1+41Fym6QFW4K7+o9cV63K+g4MTWEP3sMrLtPHY56fSs+4sfDExYtYojEFQd2cVKrNvY6fqbUbJnkdp9rEpeZ3JSTI2NjPGO/4flV/U9TvrcFPInQZGQFyfX8Ryfzr0i30Dw2FUyEqVIJYv1rVk07SbovcmC4uo4wSSiFgn4gdK1VS/QyeHlHqeQXmu3kqxyK7ZZQMAAEds59eKp3139ovGeLLbgD9D/wDr7+9bvjbXfCGnSyWwiunkHICxdPTmuWs2e9Iu7a3ljhkIyGBA9elN92YtyTtc9F+Gvia4jdbG9z5idCTyQPWvdtD1VJ4IgMICpBHocZr5j0JCl7HcR7i5JXOOvqf0/WvYdGuWWOKITqpdd5J/h4x/Q1zSVp6HTCo3C0j1uwvo5ifLdSF5zVi7ugm9gQwVWDDqc9hXG+GblAg/eq3lY3M316Y/AVafUmkmvirY3RLIMdM/dP44AosJMyNTka9nhihkAmnyJlLfwgkj/PtWzcWX2qGOLd+63LtB4+YcZrH06O3GsBmJkYKG9V2jrnH9a2Le/sLkwnEazBx8g4xnnGKsSfc7ZSkdtHg8IoFTWKtLeKpX931FYmlz3is0F3bs29soy8gjtXXaXamJfMkGGPQelVQpynJdicTVjRg9dWaIwAAKWm5pQa9Y+fuLRRRTGIRRS0lADaaafSGgkiaoz1qVqiPWgDmlFSoKiHWpUrE1JQKXFIDThQA5alU1GtO6UxMmVqlU1VDVKjUCLIpajQ1KKAPE/j7pl7bXVvrNlAgSPPmuDggHjn1ry/xPBHd+GMo370oMYPJAOc19T+KNJt9X0ua2uFDKyEAHpnFfOHiLw9LbwS2LTiG5iDAr6r2/+tXDiIWkmelhal4OJc+G+m202hLA4JjkiPXmuZ174VOPEdl4l0G6+xXVjOs4UrlGKnPIzxnp+NdN8Orh7Ow2SNvjR9i/L046ZrvLa7sWQtKwGR823tXE5SjN2Z6tLklSUZq6OLF/b348vWtIEjYfBjXJBJyME9utZy2nh6DVN76deLbeR0yf9Zu9M/3a6e/u9OE7oJY8jnrjioYhYSMeYWHbL/pWSi0zvUKNtG18yvaaxoVrqdrLp3hoyRouXlkVdwbPX5s5/OoZNT1rUdCv9J2RwNfSNloQSQhfIGOOcYFdJaafYu7M4jA7YrUEdlaRny0RGxw/H6Guhao5alKintd+p5tY/DTR7WX+1tYt1uLjACed8xX8Ogrj/FViI9S+x2cRRTnA28ZPH+RXsmsywvGYp327iAe5Bz/+qvJ/FF1nxAuS04ibDP0Oc/LnihXbMKtlEn03SRDp8aQxkzyoVDkHofTj1/lUkpuQIYRKI5LkeVHu5YKMEnH4fjVu21CRWi8+RsHG1cBflDYqtYWtxf8AiCS4lYBV3kFeoyQFAPbgfqa0pxa1Zz1Gnoje8P6jshv4lk2xrFgMDkLzj65rZu9Qkh+z2cJEcmF3tjOOB+fAFc1Z6eRLDp9r8sZZXupSMAKSRj/D61qW2nST6h9tmdokQlIthz8uBg/XH61em4tVoa6S2emwS3VxIY5ZAFTnBYY/ycVY8C6XNcazDOgfyyTK7FTgn8aybMy+INcS3t0SSK2JTLIQD6nPTp0r1rw7p8On2ohg3bQMcmlL3UKL5mblmgaZF9K3e1ZOloWm344Fa1d2FVqaPMxkr1WJQDQabXSchIDTxUamnigaCkNLRQDEpjGnGo2NAhrVGetPamGgDmhUi1GKkWsTUkBp6GoxUiUASr0oNC0HrTQhVFSoKjWpkoESJUq0xRTxQApGRg1478bdGtbKNtZCSvKxwdoyfrXsWaxfGun22o+Gr63uE3BoWxjrnHH61M4KSsy6c3CV0fPHhi7xbrcM7RozHchGSB1xitvVUimtHmFwF3LmNQ+Dn/dFeXaDr2pz6m9r9pWCS3Jj+ZdwBU9Avf612J1VRbGB5LeSUndvVuUbvwcde/U8GvLqUmpHuUKqlE4nUbu7t7/Bkd5GLYAOQPr6fjSRXWpG4IEbFQQevIB4z+B5roLtEmcyqYblYCWKwIe3NWNGu7O5uEZUTeFyeMFT12n3qnLyNI0l3NDTLm+S0iBkfep4A53+v1Fbl7qMUEQXz2jXIDCTpgjoT0rMGpR/ZgURcoQoOACHPXj0pmo3sf2aQ3At5JMBQGwCQSRgdiff8KiMW2aTlGC0ZUvtVZ5BHLOsqu+3fETng98e38jWO8EQ1iS3eT7RBOgUbMlmyfl/4EM1nu0DOt1HAFLuq/uV2hduN388496t6fOII7+53SNKXItEVufl4Jx+Ix9K61TSR5s6rbNhrP7SMAnFsohDM+TKep/DIB9an0SKKznuLi5m8zyl2xoOMkjHI9c1T0GQtf28F6QZlUM6A5DE4PJ9f/r1rXD6fbTB3lUyGVpXYnOCOnX6Vm9HY0i1a5oS3+n6aGd5FkunK5Vj0B7AD0z/ADqbSJbjxAVWCEQpHjew4BX0H61wdksmt+IZ5LOJpfM53zAYIznv09q9g8G6V9h05IgcMpySBy3pn9abiok87kzf0Oyt7O3WK1h2k8sxGM+ua6WECGDJ/Cs2wjXcGcgKoyfYVraKv9oXPnsMW6H5B/e96lU3VlyocqipR5maNpcx6fp32i9cRq3OT2FWrLVbC8/1FzG/0aqni3TbfVNAubO5H7t4yD27V8RP4t1nwV4tvrCz1W42W87KgdywK54616vJyJJHjSm5ybZ969RTDXz98KvjxBqE8Ona4BG7kKso+6T7+le/280dxAs0TBkcZBFMkeKeDTKUGgaH5oJpuaTNAMVjUbGlJqNjQIRjTSaDTc0Ac4hqVarxmplNYGxKKkSoAalQ0xE4opoNOoExy9amSoVqVDTETqaXNRg0uaAJM0OquhVgCCMEGmA09aYHyX8bPCbeF/HT3qW3k6XdYki2LhDJnkcdPXtXGW19ClxJBDjzQSqsGyxHqMg8/Wvr74p+EIfGng670Viscsm1opMco6nINfF3jHR9d8B+K307V9sc8Ue5Gj+cSKTgEH3xWM6Z0UqvLob8IkTZFLKYYY1L5yfoD7/1rQGtaXaWrNx5yREl5B8ynHGK4ttZe4t3TiWcqAznoDx19hSte6fDKFnfzn2YKgdWxwT7cCud077nasRZXR1D64I0nuY2YJIAwyMAsFx/X9KmL+Z4dgnvowZw7YRsepOfb2//AFVyZ1iz2fZbgDCZYRk8cD9MYH41m6r4lLDyLK5M5GNqls4JPr0raEDGdbuzq4NSjt71owf3Sr5jlmJXPYj0z0I9RVPwhq0kt/dSSM7CVisKBeBjJ3DPQZ/lXM6fHfatdpBL8vmlflQ4CemTXWadov2WVrGxV57iYjzJEXd5S9xkd6crJWM4Xk7m5umtLQ3ssxEskm9juGepHP0HatOzt73WL6Ke0tm8hdxGcEsCOvHf+dP03wtNqCxNqOIraL5liLcyEnndXoWh2sVoFt7eNUVB07CueUktjpjFvcb4X0FNOgKCHaz/ADMT94t3JruNPt0WIZ+6o65rMjmtreJrm5nVEHUtwBUmmC78RuFhR7bTV/iIw03+AqIqVSVluaPlpx5pbG1abtUmFpa5+zIf3sv97/ZFdrYQR28KooCqBXPm80/QrZIeDJ91Y06msbxXrd4ti6rceRJIMRoh+avYo4dUYXZ5Feu60rI3fG+txWVlJGjguykAA1+f/wAW4bsePLuQI5858qQOpr6f1GYaHoc+oazqkk7kEgytyPYV4Zqd4muas90IQqZ+Qkcn3qHLmegnHlWpl+DtLmgEcsrHfwT7V9lfAfXH1TwktvM5eW2OwknnHavlFH8kLtGVHpXo/wALPHJ8JzyPIpe2lxvA7e9O1jO59V5ozWR4Z12x1/S47+xlWSNxng1p7qBkmaM0wGloADTTSmkNADGphpzGmE80ActG1TK1UUkqZJKwRsy2rVPGapo1WYzTEWVp4qJDUgNAmPFSKajFPWmIkBpRTaq399DaRF5GAxQBeDAdTigzRKOXFeT+L/ibZabI0aSh3HZTXGSfFK/vJlit4nG84ye1LmA+g7rUoIbeSTeCFGa+ZPjLdWPijWZGnt0byxsEuPmABrvNS8aWcWh/YVuBJeyJygOSK8Z8R3TIZCT8zkk1lUk9jooxW7KV78LpzpK32j3kr713BC5AJrir7wZq9ssnmyM8kYBJJ6f49q9w+FOq/a9CktpZMtC2PwrT1yyt5Ml4FcY71zKvOMrM6nh4SSaPmeXw/qLygXBch+AP6V0WkeE/tMZtoFcPnLHG0kj61649lp0bBjbxkkYzjkVajn0+Jv8AlnwMfdxWvt20QsOkzmtH8DXFmInE0YOMsMYOf611egaVFp53k+ZKy4yF2jNVrjWYkRShxg9Ac1QvtVubiVGjYsuPTFYSqN7nTCklsdZHdwIkhYoCOOvaqt/4qhtVVLSPz5zwoAySa563ttV1m7W1s4CztwQo4HuTXpvgvwNYeHkGoaq4ubwjOSOF9lFVQoVK793YmvXhQXvbkHg3wnqesSrq3iWXbGp3R22fkX/e9TXZax4htdNhW0sQrOflUKOv0rA8U+LEgtzBb8DO1UX+I1z9lLJE5v7whrlh8q9kFe7SoU8NHXc8WpXqYiXkdG12NPga9vW827fkDrj2rm9X123s45dY1W5WJVXgMeg9qyPFviS00iye91CfMhH7tM/ePpXhXirxJqPie/MlzIUhQ/uoVPyr/wDXrnq1HUfkaRiqa0Njxx4su/FmqHG9LGM/uoievuaqWBWLBC5x2rP0+FowpYZz3q5h1fcpPtUpEydzYtbmL+JQR3FWL4R/ZHaB8ccqazoHDRgEANTb68SOKSN13bBg7TQyUexfsneI5m1C80WV2KMN6AnoR1r6QzXyP+zHcW2n+KlvLxxCjqwXJ7noK+tIpEkQPGwZT0IpR2Ke5ODS5qMGnZqhDs00mkJpjNQAMaYTzQTTCeaAOISSrEbVlxTc1dgfNYGpoxNVmNqoxGrKNTAuI9Sq1U1apUamItqalU1WjamX12lrbtI7AYFAhNY1KGwt2eRwMCvBPiX8Q57ieSy0+TJ6FgelO+LXjeSaZ9Ps5Tk8MQeleY28ZLeY5JYnJJqGxj4opbiUzTuXZjkkmtGzlhtbqHOM7sVVeVY096yjcO10JSeFbNIZ3+m6UjapeatIhKrENv5VxfiOQySO56c1694MktbnwlfO2GxGf5V5H4rZTHsjxk0VdZG1B+6T/CG+xr9xabsBxkCvS9U8xQQwPNeIeFpJNJ8U2dwSRvbBr6Ge2jvrNJ053LmvOr+7M9GguaBwl0js2VznvVD7NLI+BnPvXbvpC7idpJp+n+HJZ7pI4VUM5wNx6VKnd2Rpy21Zw9vp8hkG7niuz8J+C7zVCslwrW9p3kYYLD/ZrtdJ8HWFgwuLt1uJOq54XP8AWtDU9UWNDECqIvGB/KvUw2XSqPmqbHm4jMFBWp7hptrpmgQfZNPt1Y/xMeSx9Sa43xp4xVLlrG2bfKPvbTnn0rN8deKpIYvsVg4WVxhmHYVznh/TyzC5uf8AWMcru9fU16spworlgeYoyqvmma+kQTySm8u2Msp5VD0WqXjLxXbaFa+e8iyTsMLDn5if6VgeNfHsOmB7DSgk1+vDyg5SL/E+1eT3d3caheNcXc7TSucszHrXJOTk9TdWjoixreq3mtXzXN5ISCTsTPyoPQVWiCjgdff/ABpylFH3c/0qOSUKTtAqSbm1p9xH5WwjDU4zSht3AX26Vz6yTbvkyB/KplN6ejdfekwNl5MjJlIX0BqG4uIJIxZ25DzOwBHt3OaoPC+zdJK2Sexq5bpa6ZbfaJ2RDIwTLnGSeig+/c+lRuVsdhoL+TFBHFwQM5Br2P4ffEO60xo7TUmaa1PAY8la8T0admAaddsoADAV0NrPhQTkDtzTuSfW+l6ja6japc2kqyRsM5Bq4Gr5q8FeL73QbpXikZ4CfniJ4P096968M+ILHXrFbm0lBOPmQnlTVJ3A2WamFqazUxmpgPLU0nmoy1Jv96YjzO2lyRzWrbPwK5u0m5HNbFrL05rBmyNuJ6sxtWXFL05q3FJmhAaCmpUNU45KnR6ZJZeZYYy7HGK8o+K/jVbO3e3hkzI3AANdR4911NO06Q7wCB618263qEmqajJczMWBPy5qWxlKSWW5uWmlJZ2OSTU7XAijwetU3uBG2R0rPv8AV7cSbcnNSBdu7ssMKayb+/eOMqv51n3utIFOwdKwXv7m7mI6LVJA2fQHwT1+3uPDGqWVxKPOVMAevFZ0+hvNE923QngV578J7m/j8WpDYxmYOv70Hpivb9Q8w2o3weT2I7UTTaua0mtjybxBA0OrWTIOVYV7V4N1LzdMRCeQAK8u8RwA6lF7Gu5+H9pIym7nZkskO07eWdv7q/49q86vB1JqMdz06ElTpuUtjvLa2kumHlgAdyegrz/x/wCLJtL8WabaabdMsEFzG07R9X+YZB9sV13irxLb2enBVIs4Il+SMNku3ue9eCLfPqXilJnLOiSGSVj0xmvRo4JUEnLWX5HnV8bKs7R0j+Z9Ha5rsUUf/H0GAbO4dMegrgPFXjDAdLZ95PGVNcprOuXN+5hi3qgAGB6U3SdLb/j6vm2RjnntXoTxGlonDCjd3Zo6RBJcO95dPnneNx/WsPxx4xZon03R3IQ8STjqfZf8aj8Sa2Jbdo4XMVoBtBBw0x9B6LXBzXCI5bdvJPQdq5b3NnpoRbJWbocGrC2/HOB61Xa+lP8Aq1JHpiow11J6r70iS6Y1U8txTWeELjG7146VWEDHO+Xn0FOWJVbgEn3pASK8j8ICB9MVJ5cigMxXk8c0Kr4GQAPcU9VLttJ479+KTGT2UXmS+Y23YvcnjjqT7CrkMcF+GW4UNb8hVfv6k+561nX0yxgWadePNAP5L/U+9XrVW2r8yrgcZNDdkC1J7dpdGkSK4Zm04nEVwRloD2VvVPftXV2dwwCrwTjsc59x6isexWV49k3lvGwwQecj6VAsc2htvtxJc6YCSYx80lt6lf7y/wCz27UkxtHXxy/LgnrzW74a16+0S9S6s5ShzyM8MPQ1y1jdQ3MEcsEyyxyDKupyrCryswxzkjpjvTuSfSPgvxfY+I7QBWEV2g/eRE8/UeoroHevlzSdRuLK6S4tp3hnjOVYGvbfAXjOHxBbfZ7jbFqEa/MmeHH94VpF3JZ2Rkppeq5k96YZeetaWFc8st2IIrUtpcY5rJhPNXIWrmNkbUE3vV6GWsWB6vwSUAzXifinz3AhgZycYFUoZKxPGurpY6bIS4GFoEeZfF3X2ubk2cb8E8815oxYHkgCneIdX+16jNOz9W4+lY099kEbjiobGtS3dzIOM1hX3kqxbGSaZcXmcgGs65uGbqaEhso38h80qvANOixFDnvULjdPurW8MabNreu2unRKWDuN2PStCT3j9ljwf5kcms3cXMv3cjtXq3xA0iKPTJVgQbzyK1/h9o8WheHLe2jULhBmovGhaS3ABA7knoBTjqmN+60eFyaRPqesRQr+7UZMshGRGo6k10Woa3Y6XZw6bp254Il5kZcMzdyao+JtZt2kez0qNRGxHnTYOZCP6Vy1zuY43Fj71NKmoPm6mlWq6i5ehX8WanNfsSZBjsDyah+H+iz6vd3MUIwcjcx7CmXtu7IAqksTgD1rqvBJl8Nb7vjcVyykZBHoaqpKTTtuZwir67Fy+0FNEiR7mZJIwCQ2Mc+9cR4k8QrM7QZxEvOwHAPu3t7VY8ceNbvxLcNBaBYLaIkFkHGe+PU+9cczRw4UzpGrN1LZdj/jWcOZR97cc5K/ukd7c3d8x2DC9AW+UY9hUMels2C+W9cDA/WpZNVsbbg7g2duWIUk5wffrUf9sWjgHbOVx95H3YFXqQTLaFBhQqAe9BiOMM3FV11CwYkfam3ejNg/kaeJIXOVuM+nHWgBxjAY4BNKMA/cP41H5zhiRKoXtlf/AK9PS/gjwZ7iAj8RRcCR23gKEAP51Fe3S6bbh1w1w/8AqgR0/wBs/wBKsvdWUFq15uUoBkD++ewrkrm+luruS5lbLMegPC+1NLqwL9pIVcuSWbqWPcnrVwXLv9xjntWPalmyzHA9K6HQLdZXDsvA/Wokykb3h9phADKxOexrXWVgApwAfaqcWyNQo5xxhRVhScjJwfrT2QtylKJdIuHvrCMvbM2bm1U8+7oOzeo710Wn3cd5bx3FtKJYnGUZe/8An0rNWMBiVJJPWsyRLnQ7pr60Tfau265tlOcf7aD+96jvQmDR16zKX+dWDe5q/p19NaXUV1bTGG4iO5GHFYdndxXdvHcQMrpINysO4qeOXDDBqkSz6C8GeKYdfsMttjvIgBNHn/x4exrbM3PWvnfRdWuNMv47yzl2yIc47MO6n2r2bQ9dtNW02K9hkVNww6M3KN3FbwdzNqxy8TVbhaqMdWoq5jdF+J6uwvWZGTVqJjTBmkZxFEXY4AFeK/GLxNuJtIpOW64Nek+KrmaDTnMbY+WvmzxJcS3etymdt2GwKTJZmXDOYWlYcVl3VzgY7Vt6sAmlPt44rkpmO080tylsOM+WwDUU746HIpsA+UnvUU/GRVWEJ5mCTXvv7MXhHzZjrV1Fkscpkdq8B06NZ9SghkyUeRQfpmvub4SWNtaeG7VIIwo2ClPRFU1d3Otu7iK0tC8riONBkk9hXkfj7xPNrMptLQMloh6qfv8A19q6H4rX9ykkdmkm2FhlgO9ef3ICwDAxVQ2FLVmPLHjhFJY1Jb6XPN92Mk9ScV0Oh2NvPKvmKTXj3xp8Xa3Dq0+j2tyLWzilMeyEFS2Mck5yT+ntVbi2PRXvPC2hKbjVtWtzOv3beFvMkzjPQf1xXBeNfiANYzY6UBZ2R4wx+eTjOWI4A9hXk000uB+8bp6/59agEsoHEjj8fSk0K51N9qFyIwpuY0iAAGwHjgHv9c1gXepSFiIWYkjBkY5Jqm7M3DMxA9TSKoLYoSJEPmTPudmcnqWOTViJnhwyOykEEYNPRFA4pCBVASJqNwoCuFlUYHzDt/8AXqVdRQEFrcZ4yVOPrUMUSHqKQxqT0pWHcn+3owwIXJIPVzjPaprSUCUuLWE8D743YP41FbxID0qdgFQ444o2DcWad3VYy2QOAOwpI05wOaSFRjPvirMMamVVxxkVO4y5p1u8ziMZ9z/WuvsoFgiVAduO3+NUtGhjjti6r8xPJrRVQSoOajqMsR3hDYQYQelP+0FskgJ/OmiFMd6tx20W3kE59aLodhkVwX4J7VKjnbk8n3oMESnIXmnKQibgBk+tFwMtWk0O7N1Gh/s+VszJjiFj/EB/dPcV0ccgcJJHtZWGcD0rKkYvlGAKtwQe4qv4WkdJrqxBzFBLsjzyQpGcZqkSzoI5AActkZ455q0k8yj91IyqecA45rNLFZMgDn2qwJG5FMk//9k=" alt="Cristiano Reis, PhD" />
+      <div class="hero-text">
+        <div class="name">Cristiano Reis, PhD</div>
+        <div class="role">Assistant Professor of Chemical Engineering &nbsp;|&nbsp; Howard University (2024–present)</div>
+        <p>My lab is focused on three directions: methane mitigation via methanotrophic bioprocesses; bioprocess development for biomass and waste valorization, integrated with TEA/LCA; and engineering education research, including sustainability and green chemistry integration in chemical engineering curricula through the Engineering for One Planet (EOP) framework. I joined Howard in 2024.</p>
+        <div class="links">
+          <a href="mailto:cristiano.reis@howard.edu">Email</a>
+          <a href="https://profiles.howard.edu/cristiano-eduardo-rodrigues-reis" target="_blank" rel="noopener">Howard Profile</a>
+          <a href="https://scholar.google.com/citations?user=r8zjsIsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://orcid.org/0000-0002-9592-8084" target="_blank" rel="noopener">ORCID</a>
+          <a href="https://www.linkedin.com/in/reiscristiano" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>50+</strong><span>peer-reviewed publications</span></div>
+      <div class="stat"><strong>1,397</strong><span>citations</span></div>
+      <div class="stat"><strong>19</strong><span>h-index</span></div>
+      <div class="stat"><strong>32</strong><span>i10-index</span></div>
+    </div>
+    <p class="verify">Metrics as of May 2026. <a href="https://scholar.google.com/citations?user=r8zjsIsAAAAJ&hl=en" target="_blank" rel="noopener">Verify on Google Scholar →</a></p>
+  </section>
+
+  <section id="news">
+    <h2>News</h2>
+    <p style="color:#888; font-family:Arial,sans-serif; font-size:0.9rem;"><em>To be developed.</em></p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <ul>
+      <li><strong>Methane mitigation and valorization:</strong> methanotrophic bioprocesses for low-concentration methane streams, reactor design, gas–liquid mass transfer, and process modeling.</li>
+      <li><strong>Bioprocess development and TEA/LCA:</strong> microbial and enzymatic processes for biomass and waste valorization, integrated with techno-economic analysis and life-cycle assessment to evaluate scalability and environmental impact.</li>
+      <li><strong>Engineering education research:</strong> sustainability and green chemistry integration in chemical engineering design courses, guided by the Engineering for One Planet (EOP) framework developed with ASEE.</li>
+    </ul>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul>
+      <li><strong>CHEG 401 — Separations and Mass Transfer:</strong> fundamentals of mass transfer, equilibrium stages, and unit operations including distillation, absorption, extraction, and membrane separations.</li>
+      <li><strong>CHEG 407 — Process Design I:</strong> process synthesis, material and energy balances, preliminary economics, process safety, and sustainability-informed decision-making.</li>
+      <li><strong>CHEG 414 — Process Design II / Capstone:</strong> team-based capstone design using process simulation, equipment sizing, economics, safety, and engineering recommendations for real-world technologies.
+        <ul style="margin-top:0.4rem;">
+          <li><em>Spring 2025:</em> HEFA process for sustainable aviation fuel (SAF) production</li>
+          <li><em>Spring 2026:</em> Blue hydrogen production at scale</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <p style="font-family:Arial,sans-serif; font-size:0.88rem; color:#555; margin-bottom:0.5rem;">Journal articles and book chapters, sorted by year. Conference proceedings excluded. Links open Google Scholar. <a href="https://scholar.google.com/citations?user=r8zjsIsAAAAJ&hl=en&sortby=pubdate" target="_blank" rel="noopener">Full list on Google Scholar →</a></p>
+    <div class="pub-year">2026</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Perspectives+towards+biomass+valorization+in+integrated+circular+biorefineries%3A+" target="_blank" rel="noopener">Perspectives towards biomass valorization in integrated circular biorefineries: Insights from sorghum residue-based value chains in Sub-Saharan Africa</a></div>
+        <div class="pub-meta">DC Makepa, RK Padi, CER Reis, A Chimphango &mdash; <em>Biomass and Bioenergy</em>, 212, 109335</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Methanotrophic+Technologies+for+Low-Concentration+Methane%3A+Reactor+Designs+and+P" target="_blank" rel="noopener">Methanotrophic Technologies for Low-Concentration Methane: Reactor Designs and Performance</a></div>
+        <div class="pub-meta">AA Moss, I Thompson, J Tharakan, CER Reis &mdash; <em>Processes</em>, 14(6), 969</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Customized+Bioreactors+Development+for+Enhanced+Fuels+Production+from+Microalgal" target="_blank" rel="noopener">Customized Bioreactors Development for Enhanced Fuels Production from Microalgal Feedstock</a> <span class="book-badge">Book chapter</span></div>
+        <div class="pub-meta">MHA de Lima Cardozo, CER Reis, G Lamas-Samanamud et al. &mdash; <em>Biorefineries in Circular Bioeconomy: Reactor Configurations Analysis</em>, pp. 211–228</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Lipases+in+the+modification+of+oils+and+fats+in+the+food+industry" target="_blank" rel="noopener">Lipases in the modification of oils and fats in the food industry</a> <span class="book-badge">Book chapter</span></div>
+        <div class="pub-meta">RN Vilas-Bôas, HBS Bento, CER Reis, MF Mendes &mdash; <em>Lipases</em>, pp. 265–290</div>
+      </li>
+    </ul>
+
+    <div class="pub-year">2025</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Native+and+tailor-made+microbial+cell+factories+for+economic+production+of+bio-r" target="_blank" rel="noopener">Native and tailor-made microbial cell factories for economic production of bio-renewables: A paradigm shift in industrial biotechnology</a></div>
+        <div class="pub-meta">TS Milessi, CE Reis, MDN Ramos, AKF Carvalho, T Aminabhavi et al. &mdash; <em>Biomass and Bioenergy</em>, 201, 108097</div>
+        <div class="pub-cite">4 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Low+temperature+production+of+FAMEs+from+waste+cooking+oil+with+ball-milling+syn" target="_blank" rel="noopener">Low temperature production of FAMEs from waste cooking oil with ball-milling synthesized mixed lithium salts derived from spent bleaching clay</a></div>
+        <div class="pub-meta">W Cong, CER Reis, J Zhang, J Zhang, X Luo &mdash; <em>Fuel</em>, 388, 134492</div>
+        <div class="pub-cite">2 citations</div>
+      </li>
+    </ul>
+
+    <div class="pub-year">2024</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Utilization+of+co-products+from+corn+ethanol+industry+in+a+biorefinery+context%3A+" target="_blank" rel="noopener">Utilization of co-products from corn ethanol industry in a biorefinery context: a review on the biotechnological potential of thin stillage</a></div>
+        <div class="pub-meta">VP Shibukawa, CER Reis, JC dos Santos, PCM Da Rós &mdash; <em>Brazilian Journal of Chemical Engineering</em>, 41(4), 1091–1107</div>
+        <div class="pub-cite">9 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Key+takeaways+on+the+cost-effective+production+of+cellulosic+sugars+at+large+sca" target="_blank" rel="noopener">Key takeaways on the cost-effective production of cellulosic sugars at large scale</a></div>
+        <div class="pub-meta">R Arora, CER Reis, AK Chandel &mdash; <em>Processes</em>, 12(7), 1496</div>
+        <div class="pub-cite">13 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=A+Dynamic+Tool+to+Describe+Lamb+Growth+and+Its+Use+as+a+Decision+Support+System" target="_blank" rel="noopener">A Dynamic Tool to Describe Lamb Growth and Its Use as a Decision Support System</a></div>
+        <div class="pub-meta">RM Amaral, MT Rodrigues, EB Schultz, CER Reis &mdash; <em>Animals</em>, 14(15), 2246</div>
+        <div class="pub-cite">2 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Comparison+of+the+Waterlogging+Tolerance+and+Morphological+Responses+of+Five+Uro" target="_blank" rel="noopener">Comparison of the Waterlogging Tolerance and Morphological Responses of Five Urochloa spp. Grasses</a></div>
+        <div class="pub-meta">RM Amaral, LAC Sarango, CER Reis et al. &mdash; <em>Stresses</em>, 4(2), 320–329</div>
+        <div class="pub-cite">2 citations</div>
+      </li>
+
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Economic%2C+social%2C+and+organizational+challenges+in+biorefineries" target="_blank" rel="noopener">Economic, social, and organizational challenges in biorefineries</a> <span class="book-badge">Book chapter</span></div>
+        <div class="pub-meta">HBS Bento, Í Tessaro, JM Theodoro, W de Souza Matias Reis, CER Reis et al. &mdash; <em>Clean Energy Transition via Biomass Resource Utilization</em>, Book chapter</div>
+        <div class="pub-cite">4 citations</div>
+      </li>
+    </ul>
+
+    <div class="pub-year">2023</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Lignocellulosic+biomass-based+glycoconjugates+for+diverse+biotechnological+appli" target="_blank" rel="noopener">Lignocellulosic biomass-based glycoconjugates for diverse biotechnological applications</a></div>
+        <div class="pub-meta">CER Reis, TS Milessi, MDN Ramos, AK Singh, G Mohanakrishna et al. &mdash; <em>Biotechnology Advances</em>, 68, 108209</div>
+        <div class="pub-cite">23 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Agricultural+residues+as+raw+materials+for+pulp+and+paper+production%3A+overview+a" target="_blank" rel="noopener">Agricultural residues as raw materials for pulp and paper production: overview and applications on membrane fabrication</a></div>
+        <div class="pub-meta">LA Worku, A Bachheti, RK Bachheti, CE Rodrigues Reis, AK Chandel &mdash; <em>Membranes</em>, 13(2), 228</div>
+        <div class="pub-cite">155 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Process+strategies+to+reduce+cellulase+enzyme+loading+for+renewable+sugar+produc" target="_blank" rel="noopener">Process strategies to reduce cellulase enzyme loading for renewable sugar production in biorefineries</a></div>
+        <div class="pub-meta">CER Reis, NL Junior, HBS Bento, AKF de Carvalho et al. &mdash; <em>Chemical Engineering Journal</em>, 451, 138690</div>
+        <div class="pub-cite">102 citations</div>
+      </li>
+    </ul>
+
+    <div class="pub-year">2022</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Esterification+of+enzymatically+treated+macaw+palm+oil+catalyzed+by+heteropolyac" target="_blank" rel="noopener">Esterification of enzymatically treated macaw palm oil catalyzed by heteropolyacid supported onto Nb2O5</a></div>
+        <div class="pub-meta">SA Machado, CE Rodrigues Reis, HBS Bento, AKF Carvalho et al. &mdash; <em>Biofuels</em>, 13(8), 1021–1029</div>
+        <div class="pub-cite">1 citation</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Continuous+Synthesis+of+Biodiesel+from+Outstanding+Kernel+Oil+in+a+Packed+Bed+Re" target="_blank" rel="noopener">Continuous Synthesis of Biodiesel from Outstanding Kernel Oil in a Packed Bed Reactor Using Burkholderia cepacia Lipase Immobilized on Magnetic Nanosupport</a></div>
+        <div class="pub-meta">HBS Bento, CER Reis, PA Pinto, DV Cortez, RN Vilas Boas et al. &mdash; <em>Catalysis Letters</em>, 152(8), 2434–2444</div>
+        <div class="pub-cite">15 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Highly+Wet+Chlorella+minutissima+Biomass+for+In+Situ+Biodiesel+Production+and+Re" target="_blank" rel="noopener">Highly Wet Chlorella minutissima Biomass for In Situ Biodiesel Production and Residual Biomass Rich in Labile Carbohydrates</a></div>
+        <div class="pub-meta">GA Pedro, MS Amaral, FM Pereira, DL Flumignan, PCM Da Rós, CER Reis et al. &mdash; <em>BioEnergy Research</em>, 15(1), 154–165</div>
+        <div class="pub-cite">4 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Volumetric+scale-up+of+a+packed-bed+ion-exchange+system+to+extract+phytate+from+" target="_blank" rel="noopener">Volumetric scale-up of a packed-bed ion-exchange system to extract phytate from thin stillage</a></div>
+        <div class="pub-meta">CE Rodrigues Reis, B Hu &mdash; <em>Membranes</em>, 12(2), 230</div>
+        <div class="pub-cite">6 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Biolubricant+production+from+stearic+acid+and+residual+secondary+alcohols%3A+syste" target="_blank" rel="noopener">Biolubricant production from stearic acid and residual secondary alcohols: system and reaction design for lipase-catalyzed batch and continuous processes</a></div>
+        <div class="pub-meta">R de Lima, HBS Bento, CER Reis, RNV Bôas, L de Freitas, AKF Carvalho et al. &mdash; <em>Catalysis Letters</em>, 152(2), 547–558</div>
+        <div class="pub-cite">17 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Lowering+the+Toxicity+of+Cd+to+Theobroma+cacao+Using+Soil+Amendments+Based+on+Co" target="_blank" rel="noopener">Lowering the Toxicity of Cd to Theobroma cacao Using Soil Amendments Based on Commercial Charcoal and Lime</a></div>
+        <div class="pub-meta">CC Calva Jiménez, LV Pinedo Fernández, CE Rodrigues Reis &mdash; <em>Toxics</em>, 10(1), 15</div>
+        <div class="pub-cite">5 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Production%2C+commercial+status%2C+and+role+in+the+bioeconomy+of+biogas%3A+opportuniti" target="_blank" rel="noopener">Production, commercial status, and role in the bioeconomy of biogas: opportunities and challenges of Latin America</a> <span class="book-badge">Book chapter</span></div>
+        <div class="pub-meta">CER Reis, LEG Brenes &mdash; <em>Production of Top 12 Biochemicals Selected by USDOE from Renewable Resources</em>, Book chapter</div>
+        <div class="pub-cite">2 citations</div>
+      </li>
+    </ul>
+
+    <div class="pub-year">2021</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Virtualizing+project-based+learning%3A+an+abrupt+adaptation+of+active+learning+in+" target="_blank" rel="noopener">Virtualizing project-based learning: an abrupt adaptation of active learning in the first days of the COVID-19 pandemic, with promising outcomes</a></div>
+        <div class="pub-meta">MAC Pereira, LMNC Ignácio, CE Rodrigues Reis &mdash; <em>Sustainability</em>, 14(1), 363</div>
+        <div class="pub-cite">11 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=One-pot+fungal+biomass-to-biodiesel+process%3A+Influence+of+the+molar+ratio+and+th" target="_blank" rel="noopener">One-pot fungal biomass-to-biodiesel process: Influence of the molar ratio and the concentration of acid heterogenous catalyst on reaction yield and costs</a></div>
+        <div class="pub-meta">HBS Bento, CER Reis, PG Cunha, AKF Carvalho, HF De Castro &mdash; <em>Fuel</em>, 300, 120968</div>
+        <div class="pub-cite">16 citations</div>
+      </li>
+    </ul>
+
+    <div class="pub-year">2020</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=In+situ+transesterification+of+marine+microalgae+biomass+via+heterogeneous+acid+" target="_blank" rel="noopener">In situ transesterification of marine microalgae biomass via heterogeneous acid catalysis</a></div>
+        <div class="pub-meta">SMFE Zorn, CER Reis, HBS Bento, AKF De Carvalho, MB Silva et al. &mdash; <em>BioEnergy Research</em>, 13(4), 1260–1268</div>
+        <div class="pub-cite">16 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Lowering+the+inhibition+of+sugarcane+vinasse+as+a+culture+medium+for+oleaginous+" target="_blank" rel="noopener">Lowering the inhibition of sugarcane vinasse as a culture medium for oleaginous fungi through oxidative pre-treatment aiming at the degradation of toxic compounds</a></div>
+        <div class="pub-meta">CE Rodrigues Reis, AKF Carvalho, HBS Bento, TM Alves, HF de Castro &mdash; <em>Journal of Chemical Technology & Biotechnology</em>, 95(11), 2943–2950</div>
+        <div class="pub-cite">3 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Sugarcane+by-products+within+the+biodiesel+production+chain%3A+Vinasse+and+molasse" target="_blank" rel="noopener">Sugarcane by-products within the biodiesel production chain: Vinasse and molasses as feedstock for oleaginous fungi and conversion to ethyl esters</a></div>
+        <div class="pub-meta">CER Reis, GF Valle, HBS Bento, AKF Carvalho, TM Alves, HF de Castro &mdash; <em>Fuel</em>, 277, 118064</div>
+        <div class="pub-cite">41 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Production+of+value-added+microbial+metabolites%3A+oleaginous+fungus+as+a+tool+for" target="_blank" rel="noopener">Production of value-added microbial metabolites: oleaginous fungus as a tool for valorization of dairy by-products</a></div>
+        <div class="pub-meta">CA Braz, AKF Carvalho, HBS Bento, CER Reis, HF De Castro &mdash; <em>BioEnergy Research</em>, 13(3), 963–973</div>
+        <div class="pub-cite">17 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=An+unconventional+two-stage+cultivation+strategy+to+increase+the+lipid+content+a" target="_blank" rel="noopener">An unconventional two-stage cultivation strategy to increase the lipid content and enhance the fatty acid profile on Chlorella minutissima biomass cultivated in a novel photobioreactor</a></div>
+        <div class="pub-meta">MS Amaral, CCA Loures, GA Pedro, CER Reis, HF De Castro, FL Naves et al. &mdash; <em>Renewable Energy</em>, 156, 591–601</div>
+        <div class="pub-cite">24 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Consortium+growth+of+filamentous+fungi+and+microalgae%3A+evaluation+of+different+c" target="_blank" rel="noopener">Consortium growth of filamentous fungi and microalgae: evaluation of different cultivation strategies to optimize cell harvesting and lipid accumulation</a></div>
+        <div class="pub-meta">SMFE Zorn, CER Reis, MB Silva, B Hu, HF De Castro &mdash; <em>Energies</em>, 13(14), 3648</div>
+        <div class="pub-cite">27 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Coating+and+incorporation+of+iron+oxides+into+a+magnetic-polymer+composite+to+be" target="_blank" rel="noopener">Coating and incorporation of iron oxides into a magnetic-polymer composite to be used as lipase support for ester syntheses</a></div>
+        <div class="pub-meta">PD Mijone, RNV Bôas, HBS Bento, CER Reis, HF de Castro &mdash; <em>Renewable Energy</em>, 149, 1167–1173</div>
+        <div class="pub-cite">20 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Single+cell+oil+production+and+modification+for+fuel+and+food+applications%3A+Asse" target="_blank" rel="noopener">Single cell oil production and modification for fuel and food applications: Assessing the potential of sugarcane molasses as culture medium for filamentous fungus</a></div>
+        <div class="pub-meta">HBS Bento, AKF Carvalho, CER Reis, HF De Castro &mdash; <em>Industrial Crops and Products</em>, 145, 112141</div>
+        <div class="pub-cite">44 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Endophytic+Fungi+for+Biodiesel+Production" target="_blank" rel="noopener">Endophytic Fungi for Biodiesel Production</a> <span class="book-badge">Book chapter</span></div>
+        <div class="pub-meta">CE Rodrigues Reis, HBS Bento, AKF Carvalho, Y Yang, HF de Castro et al. &mdash; <em>Fungi in Fuel Biotechnology</em>, pp. 105–121</div>
+        <div class="pub-cite">2 citations</div>
+      </li>
+    </ul>
+
+    <div class="pub-year">2019</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Integration+of+microbial+biodiesel+and+bioethanol+industries+through+utilization" target="_blank" rel="noopener">Integration of microbial biodiesel and bioethanol industries through utilization of vinasse as substrate for oleaginous fungi</a></div>
+        <div class="pub-meta">CER Reis, AKF Carvalho, HBS Bento, HF de Castro &mdash; <em>Bioresource Technology Reports</em>, 6, 46–53</div>
+        <div class="pub-cite">41 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Critical+applications+of+Mucor+circinelloides+within+a+biorefinery+context" target="_blank" rel="noopener">Critical applications of Mucor circinelloides within a biorefinery context</a></div>
+        <div class="pub-meta">CE Rodrigues Reis, HBS Bento, AKF Carvalho, A Rajendran, B Hu, HF De Castro &mdash; <em>Critical Reviews in Biotechnology</em>, 39(4), 555–570</div>
+        <div class="pub-cite">53 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Sustainable+enzymatic+approaches+in+a+fungal+lipid+biorefinery+based+in+sugarcan" target="_blank" rel="noopener">Sustainable enzymatic approaches in a fungal lipid biorefinery based in sugarcane bagasse hydrolysate as carbon source</a></div>
+        <div class="pub-meta">AKF Carvalho, HBS Bento, CER Reis, HF De Castro &mdash; <em>Bioresource Technology</em>, 276, 269–275</div>
+        <div class="pub-cite">33 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Vinasse+treatment+within+the+sugarcane-ethanol+industry+using+ozone+combined+wit" target="_blank" rel="noopener">Vinasse treatment within the sugarcane-ethanol industry using ozone combined with anaerobic and aerobic microbial processes</a></div>
+        <div class="pub-meta">CER Reis, HBS Bento, TM Alves, AKF Carvalho, HF De Castro &mdash; <em>Environments</em>, 6(1), 5</div>
+        <div class="pub-cite">58 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Microbial+biodiesel+production%3A+From+sucrose-based+carbon+sources+to+alkyl+ester" target="_blank" rel="noopener">Microbial biodiesel production: From sucrose-based carbon sources to alkyl esters via enzymatic transesterification</a></div>
+        <div class="pub-meta">HBS Bento, AKF Carvalho, CER Reis, HF De Castro &mdash; <em>Process Safety and Environmental Protection</em>, 121, 349–356</div>
+        <div class="pub-cite">18 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Keggin-structure+heteropolyacid+supported+on+alumina+to+be+used+in+trans%2Festerif" target="_blank" rel="noopener">Keggin-structure heteropolyacid supported on alumina to be used in trans/esterification of high-acid feedstocks</a></div>
+        <div class="pub-meta">LRV da Conceição, CER Reis, R de Lima, DV Cortez, HF de Castro &mdash; <em>RSC Advances</em>, 9(41), 23450–23458</div>
+        <div class="pub-cite">53 citations</div>
+      </li>
+    </ul>
+
+    <div class="pub-year">2018</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Evaluation+of+fatty+acids+production+by+Chlorella+minutissima+in+batch+bubble-co" target="_blank" rel="noopener">Evaluation of fatty acids production by Chlorella minutissima in batch bubble-column photobioreactor</a></div>
+        <div class="pub-meta">FM Pereira, CCA Loures, MS Amaral, FM Gomes, GA Pedro, CER Reis et al. &mdash; <em>Fuel</em>, 230, 155–162</div>
+        <div class="pub-cite">42 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Co-culture+of+filamentous+feed-grade+fungi+and+microalgae+as+an+alternative+to+i" target="_blank" rel="noopener">Co-culture of filamentous feed-grade fungi and microalgae as an alternative to increase feeding value of ethanol coproducts</a></div>
+        <div class="pub-meta">CE Rodrigues Reis, L Ogero D'Otaviano, A Rajendran, B Hu &mdash; <em>Fermentation</em>, 4(4), 86</div>
+        <div class="pub-cite">11 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Effects+of+modified+processes+in+dry-grind+ethanol+production+on+phosphorus+dist" target="_blank" rel="noopener">Effects of modified processes in dry-grind ethanol production on phosphorus distribution in coproducts</a></div>
+        <div class="pub-meta">CER Reis, Q He, PE Urriola, GC Shurson, B Hu &mdash; <em>Industrial & Engineering Chemistry Research</em>, 57(44), 14861–14869</div>
+        <div class="pub-cite">10 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=The+application+of+microbial+consortia+in+a+biorefinery+context%3A+Understanding+t" target="_blank" rel="noopener">The application of microbial consortia in a biorefinery context: Understanding the importance of artificial lichens</a> <span class="book-badge">Book chapter</span></div>
+        <div class="pub-meta">CE Rodrigues Reis, A Rajendran, MB Silva, B Hu, HF De Castro &mdash; <em>Sustainable Biotechnology — Enzymatic Resources of Renewable Energy</em>, pp. 423–437</div>
+        <div class="pub-cite">8 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=The+realm+of+lipases+in+biodiesel+production" target="_blank" rel="noopener">The realm of lipases in biodiesel production</a> <span class="book-badge">Book chapter</span></div>
+        <div class="pub-meta">DV Cortez, C Reis, VH Perez, HF De Castro &mdash; <em>Sustainable Biotechnology — Enzymatic Resources of Renewable Energy</em>, pp. 247–288</div>
+        <div class="pub-cite">13 citations</div>
+      </li>
+    </ul>
+
+    <div class="pub-year">2017</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Retrofit+process+development+for+phytate+extraction+from+corn-ethanol+coproducts" target="_blank" rel="noopener">Retrofit process development for phytate extraction from corn-ethanol coproducts using industrial anion-exchange resins</a></div>
+        <div class="pub-meta">CER Reis, Q He, A Rajendran, B Hu &mdash; <em>Industrial & Engineering Chemistry Research</em>, 56(22), 6391–6400</div>
+        <div class="pub-cite">5 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Vinasse+from+sugarcane+ethanol+production%3A+better+treatment+or+better+utilizatio" target="_blank" rel="noopener">Vinasse from sugarcane ethanol production: better treatment or better utilization?</a></div>
+        <div class="pub-meta">CE Rodrigues Reis, B Hu &mdash; <em>Frontiers in Energy Research</em>, 5, 7</div>
+        <div class="pub-cite">207 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=New+technologies+in+value+addition+to+the+thin+stillage+from+corn-to-ethanol+pro" target="_blank" rel="noopener">New technologies in value addition to the thin stillage from corn-to-ethanol process</a></div>
+        <div class="pub-meta">CER Reis, A Rajendran, B Hu &mdash; <em>Reviews in Environmental Science and Bio/Technology</em>, 16(1), 175–206</div>
+        <div class="pub-cite">86 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Phytate+extraction+from+coproducts+of+the+dry-grind+corn+ethanol+process" target="_blank" rel="noopener">Phytate extraction from coproducts of the dry-grind corn ethanol process</a></div>
+        <div class="pub-meta">Q He, CER Reis, F Wang, B Hu &mdash; <em>RSC Advances</em>, 7(9), 5466–5472</div>
+        <div class="pub-cite">35 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Chemometric+methods+for+the+optimization+of+the+advanced+oxidation+processes+for" target="_blank" rel="noopener">Chemometric methods for the optimization of the advanced oxidation processes for the treatment of drinking and wastewater</a> <span class="book-badge">Book chapter</span></div>
+        <div class="pub-meta">MB Silva, CER Reis, FM Gomes, BR Contesini, APBR de Freitas et al. &mdash; <em>Applications of Advanced Oxidation Processes (AOPs) in Drinking Water Treatment</em>, Book chapter</div>
+        <div class="pub-cite">2 citations</div>
+      </li>
+    </ul>
+
+    <div class="pub-year">2016</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Microalgae+assisted+bioremediation+of+landfill+leachate+using+a+biocoil+reactor%3A" target="_blank" rel="noopener">Microalgae assisted bioremediation of landfill leachate using a biocoil reactor: evaluation of operational conditions using Taguchi experimental design</a></div>
+        <div class="pub-meta">C Reis, C Loures, H Castro, P Da Rós, J Santos Filho &mdash; <em>British Journal of Environment and Climate Change</em>, 6, 299–308</div>
+        <div class="pub-cite">8 citations</div>
+      </li>
+    </ul>
+
+    <div class="pub-year">2015</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Evaluation+of+the+cultivation+conditions+of+marine+microalgae+Chlorella+sp.+to+b" target="_blank" rel="noopener">Evaluation of the cultivation conditions of marine microalgae Chlorella sp. to be used as feedstock in ultrasound-assisted ethanolysis</a></div>
+        <div class="pub-meta">MS Amaral, CC Loures, P Da Rós, SA Machado, CER Reis, HF De Castro et al. &mdash; <em>Biofuel Research Journal</em>, 2(3), 288–294</div>
+        <div class="pub-cite">19 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Phosphorus+removal+and+recovery+from+digestate+after+biogas+production" target="_blank" rel="noopener">Phosphorus removal and recovery from digestate after biogas production</a> <span class="book-badge">Book chapter</span></div>
+        <div class="pub-meta">H Lin, J Gan, A Rajendran, CER Reis, B Hu &mdash; <em>Biofuels — Status and Perspective</em>, Book chapter</div>
+        <div class="pub-cite">64 citations</div>
+      </li>
+    </ul>
+
+    <div class="pub-year">2014</div>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Lipid+Accumulation+by+Pelletized+Culture+of+Mucor+circinelloides+on+Corn+Stover+" target="_blank" rel="noopener">Lipid Accumulation by Pelletized Culture of Mucor circinelloides on Corn Stover Hydrolysate</a></div>
+        <div class="pub-meta">CER Reis, J Zhang, B Hu &mdash; <em>Applied Biochemistry and Biotechnology</em>, 174(1), 411–423</div>
+        <div class="pub-cite">31 citations</div>
+      </li>
+      <li>
+        <div class="pub-title"><a href="https://scholar.google.com/scholar?q=Microalgal+feedstock+for+bioenergy%3A+opportunities+and+challenges" target="_blank" rel="noopener">Microalgal feedstock for bioenergy: opportunities and challenges</a> <span class="book-badge">Book chapter</span></div>
+        <div class="pub-meta">CER Reis, M de Souza Amaral, CCA Loures, PCM Da Rós, B Hu et al. &mdash; <em>Biofuels in Brazil: Fundamental Aspects, Recent Developments, and Future Perspectives</em>, Book chapter</div>
+        <div class="pub-cite">11 citations</div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="people">
+    <h2>People</h2>
+    <p style="color:#888; font-family:Arial,sans-serif; font-size:0.9rem;"><em>To be developed.</em></p>
+  </section>
+
+  <section id="funding">
+    <h2>Funding &amp; Support</h2>
+    <p style="color:#888; font-family:Arial,sans-serif; font-size:0.9rem;"><em>To be developed.</em></p>
+  </section>
+
+  <section id="opportunities">
+    <h2>Opportunities</h2>
+    <p>There are no open positions in the Reis Lab at this time. Check back for future opportunities.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      <strong>Cristiano Reis, PhD</strong><br>
+      Assistant Professor, Department of Chemical Engineering<br>
+      College of Engineering and Architecture<br>
+      Howard University, Washington, DC 20059<br>
+      <a href="mailto:cristiano.reis@howard.edu">cristiano.reis@howard.edu</a>
+    </p>
+  </section>
+</main>
+<footer>
+  &copy; <span id="yr"></span> Cristiano Eduardo Rodrigues Reis &nbsp;|&nbsp; Howard University
+  <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</footer>
+</body>
+</html>
